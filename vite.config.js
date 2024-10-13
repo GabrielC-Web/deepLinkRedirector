@@ -15,5 +15,6 @@ export default defineConfig({
   },
   publicPath: process.env.NODE_ENV === 'production'
     ? '/deepLinkRedirector/' //nombre de tu proyecto GitHub
-    : '/'
+    : '/',
+  base: '/'
 })
