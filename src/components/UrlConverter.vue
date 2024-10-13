@@ -284,6 +284,7 @@ button:hover {
     animation: scale linear infinite;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    
 }
 
 @keyframes scale {
