@@ -54,7 +54,7 @@ function urlConverter() {
 
     let url = text.value
 
-    let origin = window.location.origin
+    let origin = window.location.href.split('?')[0]
 
     finalURL.value = origin + '/?redirect=' + url
 
@@ -284,7 +284,7 @@ button:hover {
     animation: scale linear infinite;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    
+
 }
 
 @keyframes scale {
