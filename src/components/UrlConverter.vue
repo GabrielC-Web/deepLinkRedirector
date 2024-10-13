@@ -121,7 +121,7 @@ function copyURL() {
 
         <!-- Error -->
 
-        <p v-if="validURL == false">Debe escribir una URL válida</p>
+        <p v-if="validURL == false" class="error_text">Debe escribir una URL válida</p>
 
     </div>
 
@@ -278,5 +278,21 @@ button:hover {
   background: #2b2a2a;
 }
 
+/* Error */
+
+.error_text {
+    animation: scale linear infinite;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scale {
+    from {
+        scale: 1
+    }
+    to {
+        scale: 1.05
+    }
+} 
 
 </style>
