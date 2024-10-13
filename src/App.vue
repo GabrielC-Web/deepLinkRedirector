@@ -7,7 +7,7 @@ let query = ''
 onMounted(() => {
 
   if(window.location.search) {
-    query = window.location.search.split('?')[1].split('&&')[0].split('=')[1]
+    query = window.location.search.split('?redirect=')[1]
 
     redirect()
   }
@@ -16,7 +16,9 @@ onMounted(() => {
 
 function redirect() {
 
-  window.location.href = 'intent:' + query + '#Intent;scheme=http;package=com.android.chrome;S.browser_fallback_url='+ query + ';end'
+  window.open(query, '_system');
+
+  // window.location.href = 'intent:' + query + '#Intent;scheme=http;package=com.android.chrome;S.browser_fallback_url='+ query + ';end'
 
 }
 
