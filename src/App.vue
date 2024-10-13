@@ -9,8 +9,6 @@ onMounted(() => {
   if(window.location.search) {
     query = window.location.search.split('?')[1].split('&&')[0].split('=')[1]
 
-    console.log(query, window.location);
-
     redirect()
   }
 

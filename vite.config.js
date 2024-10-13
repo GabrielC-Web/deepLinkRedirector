@@ -13,8 +13,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/deepLinkRedirector/' //nombre de tu proyecto GitHub
-    : '/',
-  base: '/'
+  // publicPath: process.env.NODE_ENV === 'production'
+  //   ? '/deepLinkRedirector/' //nombre de tu proyecto GitHub
+  //   : '/',
+  base: '/deepLinkRedirector/'
 })
