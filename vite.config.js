@@ -14,6 +14,6 @@ export default defineConfig({
     }
   },
   exports: {
-    publicPath: "deepLinkRedirector",
+    publicPath: "/deepLinkRedirector/",
   }
 })
